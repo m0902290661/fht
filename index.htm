@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程式專區</title>
+    <style>
+        .head img{
+            float: left;
+            height: 50px;
+        }
+        .d1{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(d1.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: white;
+        }
+        a:hover{
+            color: rgb(112, 222, 255);
+        }
+        .d2{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(note.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        .d3{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(video.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        .cw{
+            background-color: red;
+            color: white;
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function detectDevice() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var isTablet = /iPad/i.test(navigator.userAgent);
+    return isMobile && !isTablet; // 偵測手機，但不是平板
+  }
+
+  // 顯示警告消息
+  window.onload = function() {
+    if (detectDevice()) {
+      alert("本網站為電腦設計，請更換裝置。");
+    }
+  };
+    </script>
+</head>
+<body>
+    <div class="head">
+        <img src="free.png" alt="">
+        <h1>程式專區</h1>
+    </div>
+    <hr>
+    <div class="d1">
+        <h2>多種模板下載</h2>
+        <p>此處提供各種模板來供您進行學習、參考，不過&copy;版權所有，禁止商用。</p>
+        <a href="d1.htm">前往教材區</a>
+    </div>
+    <div class="d2">
+        <h2>擁有總結筆記</h2>
+        <p>本網站的資料庫也擁有各種總結筆記，都是在學習過程中總結出的個人心得感想，希望對你能有所幫助。不過&copy;版權所有，禁止商用。</p>
+        <a href="d2.htm">前往瀏覽</a>
+    </div>
+    <div class="d3">
+        <h2>方便學習的影音教材</h2>
+        <p>此處有影音教材，能幫助您在閱讀上述教材時，能有所幫助。不過&copy;版權所有，禁止商用。</p>
+        <a href="">此區尚在製作中</a><br><br><br>
+        <a href="" class="cw">搶先體驗！！</a>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>&copy;許元洧製作 版權所有，禁止商用</p>
+        <li><a href="7.htm">&copy;版權聲明</a></li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <style>
+        .head a{
+            float: right;
+        }
+        .d1{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(d1.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(112, 222, 255);
+        }
+        .d2{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(note.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        .d3{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(video.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        .cw{
+            background-color: red;
+            color: white;
+        }
+        .footer{
+            text-align: center;
+        }
+        .im{
+            border: 1px solid black;
+            background-color: aliceblue;
+            text-align: center;
+            padding: 300px;
+        }
+        .im button{
+            background-color: red;
+            color: white;
+        }
+        .im h2{
+            color: red;
+        }
+        .d11{
+            text-align: center;
+            padding: 340px;
+            background-color: rgb(233, 229, 229);
+            background-image: url(math.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        .d11 h2{
+            background-color: white;
+            opacity: 0.7;
+        }
+        .d11 p{
+            background-color: white;
+            opacity: 0.7;
+        }
+        .d11 a{
+            background-color: white;
+            opacity: 0.7;
+        }
+        img{
+            height: 50px;
+        }
+    </style>
+    <script>
+        function sim(){
+            document.getElementById('im').style.display='block';
+        }
+        function cim(){
+            document.getElementById('im').style.display='none';
+            sd();
+        }
+        window.onload=function(){
+            sim();
+            cd();
+        }
+        function sd(){
+            document.getElementById('d').style.display='block';
+        }
+        function cd(){
+            document.getElementById('d').style.display='none';
+        }
+        function detectDevice() {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var isTablet = /iPad/i.test(navigator.userAgent);
+    return isMobile && !isTablet; // 偵測手機，但不是平板
+  }
+
+  // 顯示警告消息
+  window.onload = function() {
+    if (detectDevice()) {
+      alert("本網站為電腦設計，請更換裝置。");
+    }
+  };
+    </script>
+</head>
+<body>
+    <div class="head">
+        <h1>模板區</h1>
+        <a href="index.htm">回首頁</a>
+    </div><br><hr>
+    <div id="im" class="im">
+        <h2>注意！！</h2>
+        <p>若你關閉此彈出警告介面，即代表你同意遵守我們的「版權聲明」，謝謝。</p>
+        <button onclick="location.href='7.htm'">了解版權聲明</button>
+        <button onclick="cim()">關閉</button>
+    </div>
+    <div id="d" class="d11">
+        <h2><img src="free.png" alt="">運算程式系列</h2>
+        <p>內容物共兩套：三角函數（包括計算sin、cos和階乘）、一二次方程式</p>
+        <a download href="運算程式.zip">下載</a>
+    </div><hr>
+    <div class="footer">
+        <p>&copy;許元洧製作 版權所有，禁止商用</p>
+        <li><a href="7.htm">&copy;版權聲明</a></li><br>
+    </div>
+</body>
+</html>
